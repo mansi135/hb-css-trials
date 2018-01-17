@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <style>
+
+        h1 {
+            font-family: sans-serif;
+            margin-left: 6px;
+        }
+        
+        .parent {
+            width: 600px;
+            height: 130px;
+            background-color: #555555;
+            margin: 10px;
+
+        }
+
+        .child {
+            background-color: #cccccc;
+            display: inline-block;
+            margin-top: 6px;
+            margin-left: 6px;
+
+        }
+
+        .first-child {
+            height: 118px;
+            width: 32%;
+        }
+
+        .long {
+            height: 100px;
+            width: 25%;
+            vertical-align: top
+        }
+        
+        .short {
+            height: 75px;
+            width: 22.5%;
+            vertical-align: top
+        }
+
+        .tiny {
+            height: 35px;
+            width: 48.5%;
+            vertical-align: bottom;
+            margin-bottom: 4px;  /* this should be 6px, but doesn't display evenly with .last div if value is set to 6 */
+        }
+
+        .last {
+            height: 118px;
+            width: 48.5%;
+        }
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>AAAAAHHHHHHH</h1>
+
+    <div class="parent">
+
+        <div class="child first-child">
+
+        </div><div class="child first-child">
+        
+        </div><div class="child first-child">
+        </div>
+
+    </div>
+
+
+    <div class="parent">
+
+        <div class="child long">
+
+        </div><div class="child short">
+
+        </div><div class="child long">
+
+        </div><div class="child short">
+
+        </div>
+
+    </div>
+
+
+    <div class="parent">
+
+        <div class="child tiny">
+
+        </div><div class="child last">
+
+        </div>
+
+    </div>
+    
+  
+  
+  </body>
+
+</html>
